@@ -1,0 +1,119 @@
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Livvic", "Arial", sans-serif;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  max-width: 1320px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img {
+  width: 300px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 30px;
+}
+
+.card {
+  transition: all 0.6s ease;
+}
+
+.card:hover {
+  box-shadow: -5px -5px 30px 5px red, 5px 5px 30px 5px blue;
+  transform: scale(1.1);
+}
+
+h4 {
+  font-family: "Courier";
+  font-size: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 480px;
+  font-weight: bolder;
+  animation: type 4s steps(60, end);
+}
+
+h4:nth-child(2) {
+  animation: type2 8s steps(60, end);
+}
+
+h4 {
+  color: lime;
+  text-decoration: none;
+}
+
+h4 {
+  animation: blink 1s infinite;
+}
+
+@keyframes type {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+
+  50% {
+    width: 0;
+  }
+
+  100% {
+    width: 100;
+  }
+}
+
+@keyframes blink {
+  to {
+    opacity: .0;
+  }
+}

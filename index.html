@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Pokemon</title>
+</head>
+<body class="bg-warning">
+  
+  <div class="wrapper">
+    <div class="d-flex align-items-center justify-content-center p-3">
+      <img class="img" src="./images/pokemon_logo.png" alt="Pokemons_logo" width="300">
+    </div>
+    
+    <form class="form mb-lg-5 pokemons__form">
+      
+      <div class="row">
+        
+        <div class="col-12 col-md-6 col-lg-2 mb-3">
+          <input class="form-control" type="text" placeholder="Searche Pokemon Name">
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-2 mb-3">
+          <input class="form-control pokemons__height" type="number" placeholder="Pokemon Heigh" min="0" max="500" step="0.1">
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-2 mb-3">
+          <input class="form-control pokemons__weight" type="number" placeholder="Pokemon Weight" min="0" max="500" step="0.1">
+        </div>
+        
+        <div class="col-12 col-md-6 col-lg-2 mb-3">
+          <select class="form-select pokemons__input-type">
+            <option value="all">All</option>
+          </select>
+        </div>
+        
+        <div class="col-12 col-md-6 col-lg-2 mb-3">
+          <select class="form-select pokemons__input-sorting">
+            <option value="weight-high-to_low">Weight (High to Low)</option>
+            <option value="weight-low-to_high">Weight (Low to High)</option>
+            <option value="heigh-high-to_low">Height (High to Low)</option>
+            <option value="heigh-low-to_high">Height (Low to High)</option>
+            <option value="a-z">A-Z</option>
+            <option value="z-a">Z-A</option>
+          </select>
+        </div>
+        
+        <div class="col-12 col-md-6 col-lg-2 mb-3">
+          <button class="btn btn-dark w-100">Search</button>
+        </div>
+        
+      </div>
+    </form>
+    
+    <div class="row pokemons__wrapper">
+      
+    </div>
+    
+  </div>
+  
+  <template class="pokemons__template">
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card mb-5 rounded-5">
+        <img class="pokemons__img" src="" alt="Pokemons">
+        <div class="px-4">
+          <h4 class="mb-3 fw-bold pokemons__name">Bulbasaur</h4>
+          
+          <p class="fs-5 fw-bold mb-3">Type: <span class="mb-3 fst-italic fw-semibold text-decoration-underline pokemons__type"></span></p>
+          
+          <p class="pb-3 fs-5"><span class="mb-3 fs-5 pokemons__height">0.71 m</span> m</p>
+          
+          <p class="pb-3 fs-5"><span class="mb-3 fs-5 pokemons__weight">6.9 kg</span> kg</p>
+        </div>
+      </div>
+    </div>
+  </template>
+  
+  <script src="./js/bootstrap.js"></script>
+  <script src="./js/pokemon.js"></script>
+  <script src="./js/script.js"></script>
+  
+</body>
+</html>
